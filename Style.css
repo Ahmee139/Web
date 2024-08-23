@@ -1,0 +1,354 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #2d2e32;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+
+
+#brand {
+    display: flex;
+    width: 200px;
+    margin-left: 180px;
+    margin-top: 35px;
+    position: relative;
+    z-index: 10;
+    font-size: 22px;
+    font-family: 'agustina';
+    cursor: pointer;
+
+
+}
+
+
+
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    max-width: 100vh;
+    justify-content: space-between;
+    margin-left: 700px;
+    margin-top: -45px;
+    height: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    list-style-type: none;
+
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .5);
+
+}
+
+.navbar a:hover {
+
+    color: rgb(255, 255, 255);
+    transition: inherit;
+    transition-duration: 0.5s;
+}
+
+
+
+
+#Header {
+    padding-bottom: 2.5%;
+}
+
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#Circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    top: 10%;
+}
+
+.mini-circle {
+    height: 650px;
+    width: 650px;
+    background-color: #25262a;
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    border-radius: 360px;
+    animation: beat 2s;
+    transform-origin: center;
+}
+
+.fa-github:hover {
+
+
+    color: #6EF3A5;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#chip {
+    background-color: #6EF3A5;
+    width: 10em;
+    height: 2em;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    margin-top: 25vh;
+    margin-left: 25vh;
+    font-family: 'Montserrat';
+}
+
+
+.lable {
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: transparent;
+}
+
+
+#first-name {
+    margin-top: -10px;
+    margin-left: 180px;
+    font-size: 3.2rem;
+    font-family: 'Montserrat';
+    letter-spacing: 7px;
+    font-weight: 200;
+}
+
+#last-name {
+    margin-left: 180px;
+    font-size: 2.9rem;
+    font-family: 'Montserrat';
+    line-height: 70px;
+    font-weight: bolder;
+}
+
+
+.svg {
+
+    margin-left: -210px;
+}
+
+
+p {
+    margin-left: 215px;
+    margin-top: -35px;
+    font-family: 'Montserrat';
+}
+
+
+.line {
+    display: flex;
+    width: 6%;
+    margin-top: 50px;
+    margin-left: 26vh;
+    border-top: 0.2px solid rgb(148, 148, 148);
+}
+
+
+
+.social-icons {
+
+
+    display: flex;
+    align-items: center;
+    max-width: 45vh;
+    justify-content: space-between;
+    margin-left: 42vh;
+    margin-top: -15px;
+    color: #6EF3A5;
+}
+
+
+#linkedin {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 360px;
+    background-color: #25262a;
+    margin-top: -7px;
+    cursor: pointer;
+}
+
+
+#github {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 360px;
+    background-color: #25262a;
+    margin-top: -7px;
+    cursor: pointer;
+
+
+}
+
+#facebook {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 360px;
+    background-color: #25262a;
+    margin-top: -7px;
+    cursor: pointer;
+
+
+}
+
+
+#phone {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 360px;
+    background-color: #25262a;
+    margin-top: -7px;
+    cursor: pointer;
+}
+
+#insta {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 360px;
+    background-color: #25262a;
+    margin-top: -7px;
+    cursor: pointer;
+}
+
+
+#twitter {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 360px;
+    background-color: #25262a;
+    margin-top: -7px;
+    cursor: pointer;
+
+
+}
+
+
+.chat {
+
+    margin-top: 3vh;
+    width: 20%;
+
+}
+
+#chat-btn {
+    display: flex;
+    margin-top: -5vh;
+    line-height: 37vh;
+    margin-left: 26vh;
+    font-size: 0.9rem;
+    font-family: 'Montserrat';
+    background-color: transparent;
+    color: #6EF3A5;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+
+.stats-data {
+
+    display: flex;
+
+
+}
+
+
+.value {
+    font-family: 'Montserrat';
+    display: flex;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-left: 28vh;
+    margin-top: -15vh;
+}
+
+
+.stats-label {
+    display: flex;
+    color: #b4b7c8;
+    font-family:'Montserrat';
+    font-size: 11px;
+    margin-bottom: 1vh;
+    margin-top: -15vh;
+    margin-left: 1vh;
+    font-weight: lighter;
+}
+
+
+
+
+
+.label {
+    display: flex;
+    color: #b4b7c8;
+    font-family:'Montserrat';
+    font-size: 11px;
+    margin-top: -1vh;
+    padding: 0px;
+    margin-left: 1vh;
+    font-weight: lighter;
+
+}
+
+.value-2{
+
+    margin-left: 50vh;
+}
+
+
+.value-3{
+
+    margin-left: 80vh;
+}
+
