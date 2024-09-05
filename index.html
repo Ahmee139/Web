@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 
@@ -42,9 +42,11 @@
             </li>
     </ul>
     </div>
+    <div id="up" class="up">
+        <i id="up-icon" class="fa fa-chevron-up"></i>
+    </div>
 
-
-    <div id="Header" class="container">
+    <div id="Header" class="container  onclick= " navigateToPage()>
         <div id="chip">
 
             <span id="tag-lable" class="lable lable-title"> Web Developer</span>
@@ -56,8 +58,9 @@
 
     <div id="Circle" class="mini-circle">
 
-
+         <a href="https://github.com/Ahmee139/Web" target="_blank" >
         <i class="fa-brands fa-github fa-2xl"></i>
+    </a>
 
     </div>
 
@@ -69,7 +72,10 @@
         <div id="last-name">Ahmad Ilyas</div>
         <img class="svg" src="triangle-right-svgrepo-com.svg" alt="">
 
-        <p>UI/UX Developer</p>
+        <div id="tag" class="txt-type" data-wait="1000"
+            data-words='["Portfolio Project", "UI/UX Developer", "A Friend!", "Frontend Developer", "Student"]'>
+            <span class="txt">Portfolio Project</span>
+        </div>
 
 
     </div>
@@ -78,12 +84,17 @@
 
     <div class="social-icons">
         <div id="linkedin">
+            <a href="https://www.linkedin.com/in/muhammad-ahmad-ilyas-63975a27/" target="_blank" >
+
             <i class="fa-brands fa-linkedin"></i>
+        </a>
         </div>
 
         <div id="github">
+            <a href="https://github.com/Ahmee139/Web" target="_blank">
 
             <i class="fa-brands fa-github"></i>
+        </a>
         </div>
 
 
@@ -91,15 +102,22 @@
             <i class="fa-solid fa-phone-volume"></i>
         </div>
         <div id="facebook">
+            <a href="https://web.facebook.com/Ahmie139" target="_blank">
 
             <i class="fa-brands fa-facebook"></i>
+        </a>
         </div>
         <div id="insta">
+
+            <a href="https://www.instagram.com/_ahmadpov_/" target="_blank">
             <i class="fa-brands fa-instagram"></i>
+        </a>
         </div>
 
         <div id="twitter">
+            <a href="https://x.com/Ahmad40567924" target="_blank">
             <i class="fa-brands fa-twitter"></i>
+        </a>
         </div>
     </div>
 
@@ -136,18 +154,177 @@
         </div>
     </div>
 
+    <div class="bg-circle">
+
+    </div>
+
+
+
     <div class="container-fluid image-bg-div">
         <div class="profile-picture">
-            <img class="dp" src="Ahmad2-removebg-preview.png" alt="Ahmad profile-picture">
+            <img class="dp" src="banner3-removebg-preview.png" alt="Ahmad profile-picture">
         </div>
 
-       
+        <div class="space">
+
+        </div>
+
+
+        <div class="circle" id="circle-1">
+
+
+        </div>
+
+        <div class="circle" id="circle-2">
+
+        </div>
+
+
+        <div class="about-container about" id="about">
+
+
+
+            <div class="about-img">
+
+
+                <img src="Untitled_Project-removebg-preview.png" alt="">
+
+
+            </div>
+
+        </div>
+
+
+        <div class="about-text " id="background">
+
+
+
+            <p id="about-me-text">About Me</p>
+            <h1 class="about-me-heading">Hello There! My Name Is Muhammad Ahmad</h1>
+
+            <p class="about-quote"> “If you are not going to tell the world who you are, the world is not going
+                to tell you, how good you are.”</p>
+
+
+            <p class="about-main-text">
+                I am a passionate creator with a knack for turning ideas into stunning designs, bringing creativity and
+                innovation to every project I undertake. Dedicated to crafting user-centric solutions that stand out, I
+                am driven by curiosity and a love for solving complex problems. My work combines artistic vision with
+                technical expertise, delivering exceptional results. Committed to continuous learning and growth in the
+                ever-evolving design landscape, I strive to make a difference through impactful and meaningful work,
+                turning visions into reality with precision and flair.As a passionate designer,
+
+
+
+            </p>
+
+            <button type="button" onclick="downloadResume()" class="btn btn-success" id="download-btn">
+                <i class="fa fa-file-text" style="color: black; background-color: transparent;"></i>
+                <a href="My Resume.pdf">Download Resume</a>
+            </button>
+
+        </div>
+
+
+
+
+
+        <div id="tech" class=" tech-stack">
+            <div class="tech-stack-detail">
+                <p id="tech-stack-title">Tech Stack</p>
+                <p id="tech-stack-text">
+                    Change is inevitable, so I keep on exploring new technology,
+                    learn it in a minimal possible way and then build something
+                    out of it to see how well I did :)
+                </p>
+
+                <p class="label-stack">Mobile development</p>
+                <div id="mobile-tech" data-aos="fade-right" data-aos-duration="1200"
+                    class="tech-row aos-init aos-animate">
+                    <div class="tech"><img class="tech-icon" src="Tech Img/flutter.svg" alt="Flutter"><span
+                            class="tech-label">Flutter</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/dart.svg" alt="Dart"><span
+                            class="tech-label">Dart</span></div>
+                </div>
+
+                <p class="label-stack">Web development</p>
+                <div id="web-tech" data-aos="fade-right" data-aos-duration="1200" class="tech-row aos-init aos-animate">
+                    <div class="tech"><img class="tech-icon" src="Tech Img/html.svg" alt="HTML 5"><span
+                            class="tech-label">HTML 5</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/css.svg" alt="CSS 3"><span
+                            class="tech-label">CSS 3</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/bootstrap.svg" alt="Bootstrap"><span
+                            class="tech-label">Bootstrap</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/js.svg" alt="Javascript"><span
+                            class="tech-label">Javascript</span></div>
+                </div>
+
+                <p class="label-stack">Server side</p>
+                <div id="server-tech" data-aos="fade-right" data-aos-duration="1200"
+                    class="tech-row aos-init aos-animate">
+                    <div class="tech"><img class="tech-icon" src="Tech Img/flask.svg" alt="Flask Restful"><span
+                            class="tech-label">Flask Restful</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/node.svg" alt="Node.js"
+                            style="height: 25px;"><span class="tech-label">Node.js</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/express.svg" alt="Express.js"><span
+                            class="tech-label">Express.js</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/api.svg" alt="REST APIs"><span
+                            class="tech-label">REST APIs</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/dart_frog.svg" alt="Dart Frog"
+                            style="height: 25px;"><span class="tech-label">Dart Frog</span></div>
+                </div>
+
+                <p class="label-stack">Databases</p>
+                <div id="database-tech" data-aos="fade-right" data-aos-duration="1200"
+                    class="tech-row aos-init aos-animate">
+                    <div class="tech"><img class="tech-icon" src="Tech Img/firebase.svg" alt="Firebase"><span
+                            class="tech-label">Firebase</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/mongo.svg" alt="MongoDB"><span
+                            class="tech-label">MongoDB</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/sql.svg" alt="Postgres SQL"><span
+                            class="tech-label">Postgres SQL</span></div>
+                </div>
+
+                <p class="label-stack">Version controlloing &amp; management</p>
+                <div id="vc-tech" data-aos="fade-right" data-aos-duration="1500" class="tech-row aos-init aos-animate">
+                    <div class="tech"><img class="tech-icon" src="Tech Img/github.svg" alt="GitHub"><span
+                            class="tech-label">GitHub</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/jira.svg" alt="Jira"><span
+                            class="tech-label">Jira</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/trello.svg" alt="Trello"><span
+                            class="tech-label">Trello</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/notion.svg" alt="Notion"><span
+                            class="tech-label">Notion</span></div>
+                </div>
+
+                <p class="label-stack">UI/UX Design</p>
+                <div id="design-tech" data-aos="fade-right" data-aos-duration="1500"
+                    class="tech-row aos-init aos-animate">
+                    <div class="tech"><img class="tech-icon" src="Tech Img/figma.svg" alt="Figma"><span
+                            class="tech-label">Figma</span></div>
+                    <div class="tech"><img class="tech-icon" src="Tech Img/adobexd.svg" alt="Adobe XD"><span
+                            class="tech-label">Adobe XD</span></div>
+                </div>
+            </div>
+
+            <div class="stack-illustration">
+                <img id="stack-illustration" src="Tech Img/stack.svg" alt="stack illustrations">
+            </div>
+        </div>
 
 
 
 
 
 
+
+
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="Script.js"></script>
 </body>
 
 </html>
