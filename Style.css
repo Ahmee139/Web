@@ -1,3 +1,8 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     margin: 0px;
     padding: 0px;
@@ -60,6 +65,33 @@ body {
     transition-duration: 0.5s;
 }
 
+.up {
+    position: fixed;
+    right: 0%;
+    bottom: 8%;
+    background-color: var(--bg-dark);
+    padding: 15px;
+    padding-left: 20px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    animation: pulse2 1.5s infinite;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+@keyframes pulse2 {
+
+    0% {
+        box-shadow: 0 0 10px #6EF3A5;
+    }
+
+
+    100% {
+        box-shadow: 0 0 0 0.3rem #6EF3A5;
+    }
+}
+
 
 
 
@@ -85,6 +117,10 @@ body {
     top: 10%;
 }
 
+
+
+
+
 .mini-circle {
     height: 650px;
     width: 650px;
@@ -103,7 +139,10 @@ body {
     color: #6EF3A5;
     cursor: pointer;
     transition: all;
-    transition-duration: 1s;
+    transition-duration: 1.2s;
+}
+#Circle a{
+    color: white;
 }
 
 #chip {
@@ -154,7 +193,7 @@ body {
 }
 
 
-p {
+.UI-Text {
     margin-left: 215px;
     margin-top: -35px;
     font-family: 'Montserrat';
@@ -195,7 +234,36 @@ p {
     background-color: #25262a;
     margin-top: -7px;
     cursor: pointer;
+
+
 }
+#linkedin a{
+    color: #6EF3A5;
+}
+
+#linkedin:hover {
+
+    box-shadow: 0 0 10px #6EF3A5;
+    ;
+    transition-duration: .7s;
+
+}
+
+
+@keyframes pulse1 {
+
+    0% {
+        box-shadow: 0 0 19px 0.7s #6EF3A5;
+    }
+
+
+    100% {
+        box-shadow: 0 0 19px 0.7s #6EF3A5;
+    }
+}
+
+
+
 
 
 #github {
@@ -211,7 +279,21 @@ p {
     cursor: pointer;
 
 
+
 }
+
+#github a{
+    color: #6EF3A5;
+}
+
+#github:hover {
+
+    box-shadow: 0 0 10px #6EF3A5;
+    ;
+    transition-duration: .7s;
+
+}
+
 
 #facebook {
 
@@ -226,6 +308,18 @@ p {
     cursor: pointer;
 
 
+
+}
+
+#facebook:hover {
+
+    box-shadow: 0 0 10px #6EF3A5;
+    ;
+    transition-duration: .7s;
+
+}
+#facebook a{
+    color: #6EF3A5;
 }
 
 
@@ -241,6 +335,15 @@ p {
     background-color: #25262a;
     margin-top: -7px;
     cursor: pointer;
+
+}
+
+#phone:hover {
+
+    box-shadow: 0 0 10px #6EF3A5;
+    ;
+    transition-duration: .7s;
+
 }
 
 #insta {
@@ -254,6 +357,18 @@ p {
     background-color: #25262a;
     margin-top: -7px;
     cursor: pointer;
+
+}
+#insta a{
+    color: #6EF3A5;
+}
+
+#insta:hover {
+
+    box-shadow: 0 0 10px #6EF3A5;
+    ;
+    transition-duration: .7s;
+
 }
 
 
@@ -270,12 +385,24 @@ p {
     cursor: pointer;
 
 
+
+}
+#twitter a{
+    color: #6EF3A5;
+}
+
+#twitter:hover {
+
+    box-shadow: 0 0 10px #6EF3A5;
+    ;
+    transition-duration: .7s;
+
 }
 
 
 .chat {
 
-    margin-top: 3vh;
+    margin-top: -3vh;
     width: 20%;
 
 }
@@ -317,7 +444,7 @@ p {
 .stats-label {
     display: flex;
     color: #b4b7c8;
-    font-family:'Montserrat';
+    font-family: 'Montserrat';
     font-size: 11px;
     margin-bottom: 1vh;
     margin-top: -15vh;
@@ -332,7 +459,7 @@ p {
 .label {
     display: flex;
     color: #b4b7c8;
-    font-family:'Montserrat';
+    font-family: 'Montserrat';
     font-size: 11px;
     margin-top: -1vh;
     padding: 0px;
@@ -341,14 +468,385 @@ p {
 
 }
 
-.value-2{
+.value-2 {
 
     margin-left: 50vh;
 }
 
 
-.value-3{
+.value-3 {
 
     margin-left: 80vh;
 }
 
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+
+
+.bg-circle {
+    height: 650px;
+    width: 650px;
+    background-color: #25262a;
+    position: absolute;
+    top: 38%;
+    right: 7%;
+    border-radius: 360px
+}
+
+
+.profile-picture {
+    display: flex;
+    height: 70vh;
+    margin-left: 25vh;
+    right: 3%;
+    position: absolute;
+    margin-top: -70vh;
+    margin-left: 100px;
+}
+
+.space {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 106%;
+    width: 100vw;
+    height: 30vh;
+    background-color: #2d2e32;
+    z-index: 2;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    background-color: #6EF3A5;
+    border-radius: 360px;
+    position: absolute;
+    transform-origin: center;
+}
+
+#circle-1 {
+    animation: updown 3s infinite;
+    position: absolute;
+    top: 75%;
+    right: 33%;
+
+
+}
+
+#circle-2 {
+    animation: updown 3s infinite;
+    position: absolute;
+    top: 70%;
+    right: 10%;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(70%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.about {
+    background-color: #25262a;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+
+
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: -2vh;
+    height: 100vh;
+}
+
+
+.about-img {
+
+    background-color: transparent;
+}
+
+
+
+.about-img img {
+    vertical-align: middle;
+    border-style: none;
+    position: absolute;
+    top: 140%;
+    right: 55%;
+    width: 35vw;
+
+}
+
+
+.about-text {
+    padding-left: 5%;
+    background-color: #25262a;
+    text-align: justify;
+    text-align: justify;
+    margin-top: -50%;
+    margin-left: 40%;
+}
+
+
+#about-me-text {
+    display: flex;
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 22px;
+    color: #6EF3A5;
+}
+
+
+.about-me-heading {
+
+    color: white;
+    font-weight: 100;
+    width: 450px;
+    font-size: 2.5rem;
+    margin-left: 5%;
+    font-family: 'Montserrat';
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+.about-quote {
+    font-size: 12px;
+    font-style: italic;
+    color: #7d7e83;
+    width: 400px;
+    padding-top: 3%;
+    margin-left: 5%;
+
+}
+
+
+.about-main-text {
+    background-color: transparent;
+    font-family: 'Montserrat';
+    margin-left: 5%;
+    width: 530px;
+    color: white;
+    padding-top: 5%;
+    line-height: 30px;
+
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+}
+
+#download-btn {
+    border-radius: 8px;
+    padding: 15px;
+    margin-left: 38px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #6EF3A5;
+    transition: 0.75s;
+
+
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+
+#download-btn:hover {
+
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #34f584;
+    box-shadow: 0 0 7px #6EF3A5;
+
+
+
+}
+
+#download-btn a {
+
+    font-family: 'Montserrat';
+    color: black;
+    list-style-type: none;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.fa-file-text {
+
+
+    font-size: 17px;
+
+
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 10%;
+    padding-bottom: 8%;
+    padding-left: 8%;
+    margin-left: 18%;
+}
+
+#tech-stack-title {
+    background-color: transparent;
+    color: #6EF3A5;
+    margin-left: -55%;
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#tech-stack-text {
+    color: white;
+    width: 400px;
+    margin-left: -55%;
+    margin-top: 3%;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.label-stack {
+    margin-left: -55%;
+    font-size: 10px;
+    color: #7d7e83;
+}
+
+
+p {
+
+    margin-top: 0;
+    font-family: 'Montserrat';
+    margin-bottom: 1rem;
+
+}
+
+.txt-type {
+    display: flex;
+    width: 250px;
+    height: 30px;
+    margin-top: -35px;
+    margin-left: 200px;
+    font-family: 'Montserrat';
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+    transition-duration: 0.2s;
+}
+
+
+
+.tech {
+    padding: 3px;
+    margin-bottom: 14px;
+    max-width: max-content;
+    margin-right: 12px;
+    border-radius: 6px;
+    background-color: #6EF3A5;
+    transition: 0.5s;
+
+}
+
+.tech-label {
+
+    color: black;
+    background-color: transparent;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 25px;
+    font-family: 'Montserrat';
+    position: relative;
+    top: -5px;
+}
+
+#mobile-tech {
+    display: flex;
+    margin-left: -55%;
+}
+
+
+#web-tech {
+    display: flex;
+    margin-left: -55%;
+}
+
+
+#database-tech {
+
+    display: flex;
+    margin-left: -55%;
+
+}
+
+#vc-tech {
+
+    display: flex;
+    margin-left: -55%;
+
+}
+
+
+#design-tech {
+
+    display: flex;
+    margin-left: -55%;
+
+}
+
+#server-tech {
+
+    display: flex;
+    margin-left: -55%;
+
+}
+
+.tech:hover {
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 9px #6EF3A5;
+
+
+
+}
+
+
+
+.stack-illustration {
+
+    position: absolute;
+    right: 3%;
+
+}
